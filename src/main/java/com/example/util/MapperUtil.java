@@ -24,10 +24,13 @@ public class MapperUtil {
                 .build();
     };
     public static Function<Product, EProduct> eProductMapper = product -> {
-        EDepartment eDepartment = new EDepartment();
-        eDepartment.setDepartmentId(product.department().departmentId());
-        eDepartment.setDepartmentName(product.department().departmentName());
-        eDepartment.setDepartmentDescription(product.department().departmentDescription());
+        EDepartment eDepartment = null;
+        if(product.department()!=null) {
+            eDepartment = new EDepartment();
+            eDepartment.setDepartmentId(product.department().departmentId());
+            eDepartment.setDepartmentName(product.department().departmentName());
+            eDepartment.setDepartmentDescription(product.department().departmentDescription());
+        }
 
         EProduct eProduct = new EProduct();
         eProduct.setProductId(product.productId());

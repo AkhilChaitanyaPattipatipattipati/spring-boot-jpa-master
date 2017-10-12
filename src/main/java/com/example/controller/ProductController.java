@@ -19,7 +19,7 @@ public class ProductController {
     @Autowired
     ProductService productService;
 
-    @GetMapping(path = "/",consumes = MediaType.APPLICATION_JSON_VALUE,produces = MediaType.APPLICATION_JSON_VALUE)
+    @GetMapping(produces = MediaType.APPLICATION_JSON_VALUE)
     public @ResponseBody Product findProduct(@RequestParam("product_id") Integer productId){
       return  productService.findOne(productId);
     }

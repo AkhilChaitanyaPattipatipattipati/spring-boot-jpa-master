@@ -4,14 +4,18 @@
 1.Set your data base details in application.properties 
 
 #PostgreSql
+
 spring.datasource.url= jdbc:postgresql://localhost:5432/local
 spring.datasource.username=postgres
 spring.datasource.password=postgres
 
 spring.jpa.hibernate.ddl-auto=update
 #server port by default 8080 if you want me can use our own port
+
 server.port=1234
+
 #creates tables automatically
+
 spring.jpa.generate-ddl=true
 
 2.mvn clean compile install

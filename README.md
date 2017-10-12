@@ -1,4 +1,4 @@
-# spring-boot-spring-data-jpa-postgresql
+# spring-boot-data-jpa-postgresql
 
 
 1.Set your data base details in application.properties 

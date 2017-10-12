@@ -62,31 +62,32 @@ Request:http://localhost:1234/products?product_id=1
 Post Request
 
 http://localhost:1234/departments/save
-{
-  "departmentId":104,
-  "departmentName":"manufactoring",
-  "departmentDescription":"manufactoring in a lab"
- }
+
+	{
+	  "departmentId":104,
+	  "departmentName":"manufactoring",
+	  "departmentDescription":"manufactoring in a lab"
+	 }
  
 7.Get:http://localhost:1234/departments?department_id=102
 
 Response:
 
-{
-departmentId: 102,
-departmentName: "manufactoring",
-departmentDescription: "manufactoring in a lab",
+	{
+	departmentId: 102,
+	departmentName: "manufactoring",
+	departmentDescription: "manufactoring in a lab",
 
-    products: [
-        {
-        productId: 2,
-        productName: "prevencia",
-        productDescription: "lens"
-        },
-        {
-        productId: 1,
-        productName: "prevencia",
-        productDescription: "lens"
-        }
-    ]
-}
+	    products: [
+		{
+		productId: 2,
+		productName: "prevencia",
+		productDescription: "lens"
+		},
+		{
+		productId: 1,
+		productName: "prevencia",
+		productDescription: "lens"
+		}
+	    ]
+	}

@@ -26,19 +26,18 @@ spring.jpa.generate-ddl=true
 
 POST:http://localhost:1234/products/save
 
-Request:
-{
+	Request:
+	{
 
-"productId":"1",
-"productName":"prevencia",
-"productDescription":"lens",
-
-"department":{
-  "departmentId":"102",
-  "departmentName":"manufactoring",
-  "departmentDescription":"manufactoring in a lab"
-  }
-}
+	"productId":"1",
+	"productName":"prevencia",
+	"productDescription":"lens",
+	"department":{
+	  "departmentId":"102",
+	  "departmentName":"manufactoring",
+	  "departmentDescription":"manufactoring in a lab"
+	  }
+	}
 
 5.select productdata
 

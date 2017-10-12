@@ -25,11 +25,14 @@ spring.jpa.generate-ddl=true
 4.Save Products Data alog with Department data 
 
 POST:http://localhost:1234/products/save
+
 Request:
 {
+
 "productId":"1",
 "productName":"prevencia",
 "productDescription":"lens",
+
 "department":{
   "departmentId":"102",
   "departmentName":"manufactoring",
@@ -40,6 +43,7 @@ Request:
 5.select productdata
 
 Request:http://localhost:1234/products?product_id=1
+
     Response:
     {
     "productId": 1,
@@ -56,6 +60,7 @@ Request:http://localhost:1234/products?product_id=1
 6.see the data which is saved in data base through 
 
 Post Request
+
 http://localhost:1234/departments/save
 {
   "departmentId":104,
@@ -66,10 +71,12 @@ http://localhost:1234/departments/save
 7.Get:http://localhost:1234/departments?department_id=102
 
 Response:
+
 {
 departmentId: 102,
 departmentName: "manufactoring",
 departmentDescription: "manufactoring in a lab",
+
     products: [
         {
         productId: 2,
